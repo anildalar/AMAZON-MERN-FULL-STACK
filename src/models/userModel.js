@@ -32,7 +32,7 @@ const userSchema = new Schema({
     },
     role:{
         type:String,
-        enum:['admin','customer','customercare'],
+        enum:['admin','customer','customercare'], //enumerated values
         default:'customer'
     }
 },{
@@ -52,6 +52,18 @@ userSchema.virtual('password').set(function(password){
     this.hash_pass = bcrypt.hashSync(password, 10); 
 });
 
+//Lets attach some functions
+
+
+userSchema.methods = {
+    /**
+     * p:v
+     * fn:function(){}
+     */
+    checkMyPassword:function(p){ //formal argument
+        return bcrypt.compareSync(p, this.hash_pass);;
+    }
+};
 
 //2. Lets Create a model
 
