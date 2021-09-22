@@ -1,0 +1,4 @@
+MVC
+M = MODEL (Schema and DB Related)
+V = View
+C = Controller (Buisiness Logic)
