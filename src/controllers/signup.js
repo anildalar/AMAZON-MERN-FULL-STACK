@@ -1,5 +1,8 @@
+const { validationResult } = require('express-validator');
 const userModel = require('../models/userModel');
 let signup = (req,res)=>{
+   
+
     console.log(req.body.email);
     //1. Find the email address if availble show error if not avaible then create the record
    
