@@ -1,0 +1,25 @@
+Amazon
+
+User Role
+1. Admin
+2. Customer
+
+Category
+	Parent Category
+		-> Child Category
+			-> Child Category
+	Electronics
+		Mobile
+		   Mobiles & Accessories
+		   moible-&-accessories 
+			Mobile Chargers
+			cover
+			earphone
+
+Slug
+
+
+Mobiles & Accessories = moible-&-accessories 
+
+Ternaray Operatory
+c?t:f

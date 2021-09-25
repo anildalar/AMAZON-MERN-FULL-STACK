@@ -1,0 +1,3 @@
+[submodule "amazon-webdevelopment"]
+	path = amazon-webdevelopment
+	url = https://github.com/anildalar/amazon-webdevelopment.git
